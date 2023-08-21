@@ -1,4 +1,4 @@
-package Controlador;
+package Administracion.Controlador;
 
 /**
  * @author laionel
@@ -6,7 +6,7 @@ package Controlador;
  */
 public class cUsuarios {
 
-    private String id, nombre, apellido, usuario, password, preguntaSeguridad, respuestaSeguridad, correo, estado;
+    private String id, nombre, usuario, password, preguntaSeguridad, respuestaSeguridad, correo, estado;
 
     public String getId() {
         return id;
@@ -22,14 +22,6 @@ public class cUsuarios {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getUsuario() {
@@ -82,6 +74,7 @@ public class cUsuarios {
 
     @Override
     public String toString() {
-        return "cUsuarios{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", usuario=" + usuario + ", password=" + password + ", preguntaSeguridad=" + preguntaSeguridad + ", respuestaSeguridad=" + respuestaSeguridad + ", correo=" + correo + ", estado=" + estado + '}';
+        return "cUsuarios{" + "id=" + id + ", nombre=" + nombre + ", usuario=" + usuario + ", password=" + password + ", preguntaSeguridad=" + preguntaSeguridad + ", respuestaSeguridad=" + respuestaSeguridad + ", correo=" + correo + ", estado=" + estado + '}';
     }
+
 }
